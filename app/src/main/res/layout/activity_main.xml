@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".MainActivity">
+
+    <!-- Group pantalla -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pantallaorden"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bluegrey"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnAcelerometro"
+            android:layout_width="160dp"
+            android:layout_height="140dp"
+            android:backgroundTint="@color/grey"
+            android:fontFamily="@font/comicbd"
+            android:text="@string/aceler"
+            android:textColor="@color/bluegrey"
+            android:textSize="16sp"
+            app:cornerRadius="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.119"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintVertical_bias="0.095" />
+
+        <Button
+            android:id="@+id/btnSensorLuz"
+            android:layout_width="160dp"
+            android:layout_height="140dp"
+            android:backgroundTint="@color/grey"
+            android:fontFamily="@font/comicbd"
+            android:text="@string/sensorluz"
+            android:textColor="@color/bluegrey"
+            android:textSize="16sp"
+            app:cornerRadius="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.119"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnAcelerometro"
+            app:layout_constraintVertical_bias="0.094" />
+
+        <Button
+            android:id="@+id/btnGiroscopio"
+            android:layout_width="160dp"
+            android:layout_height="140dp"
+            android:backgroundTint="@color/grey"
+            android:fontFamily="@font/comicbd"
+            android:textColor="@color/bluegrey"
+            android:text="@string/giroscop"
+            android:textSize="16sp"
+            app:cornerRadius="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.553"
+            app:layout_constraintStart_toEndOf="@+id/btnAcelerometro"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintVertical_bias="0.095" />
+
+        <Button
+            android:id="@+id/btnProximidad"
+            android:layout_width="160dp"
+            android:layout_height="140dp"
+            android:backgroundTint="@color/grey"
+            android:fontFamily="@font/comicbd"
+            android:text="@string/sensorprox"
+            android:textColor="@color/bluegrey"
+            android:textSize="16sp"
+            app:cornerRadius="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.557"
+            app:layout_constraintStart_toEndOf="@+id/btnSensorLuz"
+            app:layout_constraintTop_toBottomOf="@+id/btnGiroscopio"
+            app:layout_constraintVertical_bias="0.094" />
+
+        <Button
+            android:id="@+id/btnMagnometro"
+            android:layout_width="160dp"
+            android:layout_height="140dp"
+            android:backgroundTint="@color/grey"
+            android:fontFamily="@font/comicbd"
+            android:text="@string/magnometro"
+            android:textColor="@color/bluegrey"
+            android:textSize="16sp"
+            app:cornerRadius="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.119"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSensorLuz"
+            app:layout_constraintVertical_bias="0.094" />
+
+        <Button
+            android:id="@+id/btnHuella"
+            android:layout_width="160dp"
+            android:layout_height="140dp"
+            android:backgroundTint="@color/grey"
+            android:fontFamily="@font/comicbd"
+            android:text="@string/sensorHuella"
+            android:textColor="@color/bluegrey"
+            android:textSize="16sp"
+            app:cornerRadius="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnMagnometro"
+            app:layout_constraintTop_toBottomOf="@+id/btnProximidad"
+            app:layout_constraintVertical_bias="0.094" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

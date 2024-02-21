@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AppSensores</string>
+
+    <string name="aceler">Acelerometro</string>
+    <string name="giroscop">Giroscopio</string>
+    <string name="sensorluz">Sensor de luz ambiental</string>
+    <string name="sensorprox">Sensor de proximidad</string>
+    <string name="magnometro">Magnómetro</string>
+    <string name="sensorHuella">Sensor huella</string>
+</resources>
